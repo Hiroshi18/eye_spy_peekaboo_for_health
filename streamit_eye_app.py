@@ -40,7 +40,7 @@ def pred2(image_processed):
     prediction_result1 = model1.predict(image_processed)
     #getting class index with highest probability
     st.write(prediction_result1)
-    return prediction_result1)
+    return prediction_result1
 
 with st.container():
     st.markdown("<center><h1>Eye Spy</h1></center>", unsafe_allow_html=True)
