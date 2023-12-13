@@ -41,7 +41,8 @@ def pred2(image_processed):
     #getting class index with highest probability
     st.write(prediction_result1)
     print(prediction_result1)
-
+    if prediction_result1[1] > 0.50:
+        return "Anomaly: MH"
 
 with st.container():
     st.markdown("<center><h1>Eye Spy</h1></center>", unsafe_allow_html=True)
